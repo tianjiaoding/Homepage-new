@@ -12,7 +12,14 @@
   {% endif %}
   </div> -->
   <div class="col-sm-3">
-    <img src="https://homes.cs.washington.edu/~yifan1/images/dpcp.png" alt="Spotlight_fastsound">
+    {% if entry.img %}
+      {% if entry.img contains '://' %}
+      <img src="{{ entry.img }}" alt="{{entry.title}}">
+      {% else %}
+      <img src="{{ entry.img | prepend: '/assets/img/' | relative_url }}" alt="{{entry.title}}">
+      {% endif %}
+    {% endif %}
+
   </div>
 
   <div id="{{entry.key}}" class="col-sm-8">

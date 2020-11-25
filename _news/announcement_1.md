@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+date: 2020-3-1 15:59:00-0400
 inline: true
 ---
 
-A simple inline announcement.
+One paper on robust homography estimation accepted to CVPR 2020 in Seattle, Washington.
