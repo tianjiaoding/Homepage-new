@@ -2,7 +2,7 @@
 ---
 
 <div class="row">
-  <div class="col-sm-2 abbr">
+  <!-- <div class="col-sm-2 abbr">
   {% if entry.abbr %}
     {% if site.data.venues[entry.abbr] %}
     <abbr class="badge"><a href="{{site.data.venues[entry.abbr].url}}" target="_blank">{{entry.abbr}}</a></abbr>
@@ -10,6 +10,9 @@
     <abbr class="badge">{{entry.abbr}}</abbr>
     {% endif %}
   {% endif %}
+  </div> -->
+  <div class="col-sm-3">
+    <img src="https://homes.cs.washington.edu/~yifan1/images/dpcp.png" alt="Spotlight_fastsound">
   </div>
 
   <div id="{{entry.key}}" class="col-sm-8">
@@ -20,30 +23,30 @@
       <div class="author">
         {% for author in entry.author_array %}
           {% if forloop.length == 1 %}
-            {% if author.last == site.scholar.last_name %}
-              <em>{{author.last}}, {{author.first}}</em>
+            {% if author.last == site.scholar.last_name and author.first == site.scholar.first_name %}
+              <em>{{author.first}} {{author.last}}</em>
             {% else %}
-              {{author.last}}, {{author.first}}
+              {{author.first}} {{author.last}}
             {% endif %}
           {% else %}
             {% unless forloop.last %}
-              {% if author.last == site.scholar.last_name %}
-                <em>{{author.last}}, {{author.first}}</em>,
+              {% if author.last == site.scholar.last_name and author.first == site.scholar.first_name %}
+                <em>{{author.first}} {{author.last}}</em>,
               {% else %}
-                {% if site.data.coauthors[author.last] %}
-                  <a href="{{site.data.coauthors[author.last].url}}" target="_blank">{{author.last}}, {{author.first}}</a>,
+                {% if site.data.coauthors[author.first] %}
+                  <a href="{{site.data.coauthors[author.first].url}}" target="_blank">{{author.first}} {{author.last}}</a>,
                 {% else %}
-                  {{author.last}}, {{author.first}},
+                  {{author.first}} {{author.last}},
                 {% endif %}
               {% endif %}
             {% else %}
-              {% if author.last == site.scholar.last_name %}
-                and <em>{{author.last}}, {{author.first}}</em>
+              {% if author.last == site.scholar.last_name and author.first == site.scholar.first_name %}
+                and <em>{{author.first}} {{author.last}}</em>
               {% else %}
-                {% if site.data.coauthors[author.last] %}
-                  and <a href="{{site.data.coauthors[author.last].url}}" target="_blank">{{author.last}}, {{author.first}}</a>
+                {% if site.data.coauthors[author.first] %}
+                  and <a href="{{site.data.coauthors[author.first].url}}" target="_blank">{{author.first}} {{author.last}}</a>
                 {% else %}
-                  and {{author.last}}, {{author.first}}
+                  and {{author.first}} {{author.last}}
                 {% endif %}
               {% endif %}
             {% endunless %}
@@ -52,14 +55,14 @@
       </div>
 
       <div class="periodical">
-      {% if entry.type == "article" %}
+      {%- if entry.type == "article" -%}
         <em>{{entry.journal}}</em>
-      {% elsif entry.type == "inproceedings" %}
+      {%- elsif entry.type == "inproceedings" -%}
         <em>In {{entry.booktitle}}</em>
-      {% endif %}
-      {% if entry.year %}
+      {%- endif -%}
+      {%- if entry.year -%},
         {{entry.year}}
-      {% endif %}
+      {%- endif -%}
       </div>
     {% endif %}
 

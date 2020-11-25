@@ -336,16 +336,21 @@ footer.sticky-bottom {
         font-weight: bolder;
       }
       .author {
+        color: $grey-color;
         a {
-          border-bottom: 1px dashed var(--global-theme-color);
-          &:hover {
-              border-bottom-style: solid;
-              text-decoration: none;
-          }
+          color: inherit;
+          // border-bottom: 1px dashed var(--global-theme-color);
+          // &:hover {
+              // border-bottom-style: solid;
+              // border-bottom: 1px solid var(--global-theme-color);
+              // text-decoration: none;
+          // }
         }
         > em {
-          border-bottom: 1px solid;
+          // border-bottom: 1px solid;
+          color: var(--global-text-color);
           font-style: normal;
+          font-weight: bolder;
         }
       }
       .links {
@@ -396,6 +401,11 @@ footer.sticky-bottom {
       }
       div.abstract.hidden.open {
         border-color: $grey-color;
+      }
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
       }
     }
   }
