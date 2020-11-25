@@ -8,7 +8,7 @@ middle_name:
 last_name: Ding
 email: richard.dtj@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+  Tianjiao Ding is a PhD student at Johns Hopkins University, advised by Professor René Vidal. His research interests lie in the theoretical foundations of machine learning and data science as well as emerging applications.
 footer_text:
   # Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   # Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
@@ -54,7 +54,7 @@ keybase_username: # your keybase user name
 contact_note: >
   You can even add a little note about which of these is the best way to reach you.
 
-google_analytics: UA-XXXXXXXXX # out your google-analytics code
+google_analytics: UA-126924052-1 # out your google-analytics code
 
 # -----------------------------------------------------------------------------
 # Blog
