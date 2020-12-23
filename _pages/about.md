@@ -3,15 +3,15 @@ layout: about
 title: about
 permalink: /
 description: >
-  Ph.D. Student • <a href="http://vision.jhu.edu/" target="_blank">Vision, Dynamics and Learning Lab</a> • <a href="https://www.jhu.edu/" target="_blank">Johns Hopkins University</a> • Email: tding at jhu dot edu
+  Ph.D. Student • <a href="http://vision.jhu.edu/" target="_blank">Vision, Dynamics and Learning Lab</a> • <a href="https://www.jhu.edu/" target="_blank">Johns Hopkins University</a> • Email: tding@jhu.edu
 
 profile:
   align: right
   image: EatInLongBeach.jpeg
   address: >
-    <p>1C-301, SIST Building</p>
+    <p>1C-301 SIST Building</p>
     <p>393 Middle Huaxia Rd</p>
-    <p>201210 Shanghai, China</p>
+    <p>Shanghai 201210, China</p>
 
 news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"

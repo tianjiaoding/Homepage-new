@@ -154,10 +154,13 @@ a, table.table a {
 .news table td {
   font-size: 1rem;
   color: var(--global-text-color);
+  font-weight: normal;
 }
 
 .news table th {
+  font-size: 1rem;
   color: var(--global-text-color);
+  font-weight: 600;
 }
 
 // Social (bottom)
@@ -333,7 +336,8 @@ footer.sticky-bottom {
         }
       }
       .title {
-        font-weight: bolder;
+        // font-weight: bolder;
+        font-weight: 600;
       }
       .author {
         color: $grey-color;
@@ -350,7 +354,8 @@ footer.sticky-bottom {
           // border-bottom: 1px solid;
           color: var(--global-text-color);
           font-style: normal;
-          font-weight: bolder;
+          // font-weight: bolder;
+          font-weight: 600;
         }
       }
       .links {
