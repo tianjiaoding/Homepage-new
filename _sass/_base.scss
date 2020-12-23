@@ -150,17 +150,18 @@ a, table.table a {
 
 
 // News
-
-.news table td {
-  font-size: 1rem;
-  color: var(--global-text-color);
-  font-weight: normal;
-}
-
-.news table th {
-  font-size: 1rem;
-  color: var(--global-text-color);
-  font-weight: 600;
+.news {
+  margin-top: 2rem;
+  table td {
+    font-size: 1rem;
+    color: var(--global-text-color);
+    font-weight: normal;
+  }
+  table th {
+    font-size: 1rem;
+    color: var(--global-text-color);
+    font-weight: 600;
+  }
 }
 
 // Social (bottom)
