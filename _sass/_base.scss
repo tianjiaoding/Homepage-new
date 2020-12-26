@@ -35,8 +35,9 @@ a, table.table a {
 // Profile
 
 .profile {
-  margin-left: 1rem;
-  width: 100%;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+  width: 100%;  
 
   .address {
     margin-bottom: 5px;
@@ -52,7 +53,8 @@ a, table.table a {
 
 @media (min-width: 576px) {
   .profile {
-    width: 30%;
+    width: auto;
+
     .address {
       p { display: block; }
     }
