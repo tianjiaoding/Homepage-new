@@ -7,8 +7,8 @@ first_name: Tianjiao
 middle_name:
 last_name: Ding
 email: richard.dtj@gmail.com
-description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Tianjiao Ding is a PhD student at Johns Hopkins University, advised by Professor René Vidal. His research interests lie in the theoretical foundations of machine learning and data science as well as emerging applications.
+description: Tianjiao Ding is a PhD student at Johns Hopkins University, advised by Professor René Vidal. His research interests lie in the theoretical foundations of machine learning and data science as well as emerging applications.
+keywords: Tianjiao,Tianjiao Ding,Computer,Vision,Machine,Learning,3D,Homepage,Hopkins
 footer_text:
   # Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   # Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
